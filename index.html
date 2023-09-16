@@ -1,20 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Controle de Gastos</title>
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 <body>
-    <h1>Controle de Gastos</h1>
-    <form id="expense-form">
-        <input type="text" id="expense-input" placeholder="Despesa">
-        <input type="number" id="amount-input" placeholder="Valor">
-        <button type="submit">Adicionar Despesa</button>
-    </form>
-    <div id="balance">
-        <h2>Saldo: <span id="balance-amount">0</span></h2>
+    <div id="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Nome de Usuário" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
     </div>
-    <ul id="expense-list"></ul>
+
+    <div id="app-container" style="display: none;">
+        <h2>Controle de Gastos</h2>
+        <p>Saldo: R$ <span id="balance-amount">0.00</span></p>
+        
+        <form id="expense-form">
+            <input type="text" id="expense-input" placeholder="Nome da Despesa" required>
+            <input type="number" id="amount-input" placeholder="Valor (R$)" required>
+            <button type="submit">Adicionar Despesa</button>
+            <button type="button" id="add-income">Adicionar Ganho</button>
+        </form>
+        
+        <ul id="expense-list"></ul>
+    </div>
+    
     <script src="./js/script.js"></script>
 </body>
 </html>

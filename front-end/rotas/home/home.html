@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Controle de Gastos</title>
+</head>
+<body>
+    <div id="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Nome de Usuário" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <a href="./rotas/home/home.html">
+                <button type="submit">Entrar</button>
+            </a>
+        </form>
+    </div>
+    
+    <div id="app-container" style="display: none;">
+        <h2>Controle de Gastos</h2>
+        <p>Saldo: R$ <span id="balance-amount">0.00</span></p>
+        
+        <form id="expense-form">
+            <input type="text" id="expense-input" placeholder="Nome da Despesa" required>
+            <input type="number" id="amount-input" placeholder="Valor (R$)" required>
+            <button type="submit">Adicionar Despesa</button>
+            <button type="button" id="add-income">Adicionar Ganho</button>
+        </form>
+        
+        <ul id="expense-list"></ul>
+    </div>
+    
+    <script src="home.js"></script>
+</body>
+</html>

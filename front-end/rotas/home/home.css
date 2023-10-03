@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Cor de fundo */
+}
+
+#login-container, #app-container {
+    text-align: center;
+    margin: 100px auto;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff; /* Cor de fundo */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+h2 {
+    color: #007BFF; /* Cor do título */
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="password"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc; /* Cor da borda */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007BFF; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+#balance-amount {
+    font-weight: bold;
+    font-size: 18px;
+    color: #007BFF; /* Cor do saldo */
+}
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+li {
+    background-color: #f0f0f0; /* Cor de fundo dos itens da lista */
+    border: 1px solid #ccc; /* Cor da borda dos itens da lista */
+    border-radius: 5px; /* Bordas arredondadas dos itens da lista */
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+li button {
+    background-color: #ff4444; /* Cor de fundo do botão de remover */
+    color: #fff; /* Cor do texto do botão de remover */
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas do botão de remover */
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: #d92626; /* Cor de fundo do botão de remover ao passar o mouse */
+}

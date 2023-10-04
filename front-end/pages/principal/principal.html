@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Controle de Gastos</title>
+</head>
+<body>
+    <header>
+        <h1>Controle de Gastos</h1>
+    </header>
+    <main>
+        <div class="expense-list">
+            <p>Saldo: R$ <span id="balance-amount">0.00</span></p>
+            
+            <form id="transaction-form">
+                <input type="text" id="transaction-input" placeholder="Nome da Despesa/Ganho" required>
+                <input type="number" id="amount-input" placeholder="Valor (R$)" required>
+                <select id="transaction-type">
+                    <option value="expense">Despesa</option>
+                    <option value="income">Ganho</option>
+                </select>
+                <button type="submit">Adicionar</button>
+            </form>
+            
+            <ul id="transaction-list"></ul>
+        </div>
+    </main>
+    <footer class="footer">
+        Nektar World
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

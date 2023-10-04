@@ -1,0 +1,100 @@
+/* Estilos globais */
+body {
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #f8e866;
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 30px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#balance-amount {
+    font-weight: bold;
+    font-size: 18px;
+    color: #4ccf48;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #f8e866;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #111;
+}
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+li {
+    background-color: #f0f0f0;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+li button {
+    background-color: #ff4444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: #d92626;
+}

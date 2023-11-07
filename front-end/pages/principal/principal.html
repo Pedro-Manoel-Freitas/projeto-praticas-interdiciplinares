@@ -9,24 +9,34 @@
 <body>
     <header>
         <h1>Controle de Gastos</h1>
+        <div class="balance">
+            <h2>Saldo Disponível</h2>
+            <p>R$ <span id="available-balance">0.00</span></p>
+        </div>
     </header>
     <main>
         <div class="expense-list">
-            <p>Saldo: R$ <span id="balance-amount">0.00</span></p>
-            
-            <form id="transaction-form">
-                <input type="text" id="transaction-input" placeholder="Nome da Despesa/Ganho" required>
-                <input type="number" id="amount-input" placeholder="Valor (R$)" required>
-                <select id="transaction-type">
-                    <option value="expense">Despesa</option>
-                    <option value="income">Ganho</option>
-                </select>
+            <h2>Despesas</h2>
+            <p>Total de Despesas: R$ <span id="expense-balance-amount">0.00</span></p>
+            <form id="expense-transaction-form">
+                <input type="text" id="expense-transaction-input" placeholder="Nome da Despesa" required>
+                <input type="number" id="expense-amount-input" placeholder="Valor (R$)" step="0.01" required>
                 <button type="submit">Adicionar</button>
             </form>
-            
-            <ul id="transaction-list"></ul>
+            <ul id="expense-transaction-list"></ul>
+        </div>
+        <div class="income-list">
+            <h2>Ganhos</h2>
+            <p>Total de Ganhos: R$ <span id="income-balance-amount">0.00</span></p>
+            <form id="income-transaction-form">
+                <input type="text" id="income-transaction-input" placeholder="Nome do Ganho" required>
+                <input type="number" id="income-amount-input" placeholder="Valor (R$)" step="0.01" required>
+                <button type="submit">Adicionar</button>
+            </form>
+            <ul id="income-transaction-list"></ul>
         </div>
     </main>
+    
     <footer class="footer">
         Nektar World
     </footer>

@@ -1,4 +1,3 @@
-/* Estilos globais */
 body {
     font-family: 'Pacifico', cursive;
     margin: 0;
@@ -8,6 +7,9 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
     background-color: #333;
     color: #f8e866;
     padding: 20px;
@@ -21,13 +23,31 @@ header h1 {
 }
 
 main {
+    display: flex;
+    justify-content: space-around;
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
     text-align: center;
     padding: 30px;
-    max-width: 600px;
+    max-width: 1000px;
     margin: 20px auto;
+    
+}
+.expense-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    margin: 20px;
+}
+
+.income-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    margin: 20px;
 }
 
 #balance-amount {
@@ -35,14 +55,15 @@ main {
     font-size: 18px;
     color: #4ccf48;
 }
-
 form {
     margin-top: 20px;
 }
-
+.button_remove {
+    background-color: blue;
+}
 input[type="text"], input[type="number"] {
-    width: 100%;
-    padding: 10px;
+    width: 90%;
+    padding: 5px;
     margin-top: 10px;
     border: 1px solid #333;
     border-radius: 5px;
@@ -57,9 +78,9 @@ select {
 }
 
 button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 20px;
+    width: auto;
+    padding: auto;
+    margin-top: auto;
     background-color: #333;
     color: #f8e866;
     border: none;
@@ -97,4 +118,7 @@ li button {
 
 li button:hover {
     background-color: #d92626;
+}
+.balance{
+    color: green
 }

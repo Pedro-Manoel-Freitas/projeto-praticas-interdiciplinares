@@ -1,70 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 body {
-    background-color: #f0f0f0; /* Fundo mais claro */
+    background-color: #f0f0f0; 
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: 'Pacifico', cursive; /* Fonte 'Pacifico' */
+    font-family: 'Pacifico', cursive; 
 }
 
 .login-container {
-    background-color: #ffffff; /* Fundo branco */
-    border-radius: 20px; /* Borda mais arredondada */
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4); /* Sombra mais forte */
+    background-color: #ffffff; 
+    border-radius: 20px; 
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4); 
     text-align: center;
     padding: 30px;
-    max-width: 600px; /* Largura máxima aumentada */
+    max-width: 600px; 
 }
 
 .login-tab {
-    background-color: #333; /* Preto suave */
+    background-color: #333;
     color: #f8e866;
-    font-size: 36px; /* Maior tamanho de fonte */
+    font-size: 36px; 
     padding: 20px;
-    border-radius: 20px 20px 0 0; /* Borda mais arredondada */
+    border-radius: 20px 20px 0 0;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Maior espaço entre elementos */
+    gap: 20px; 
     padding: 20px 0;
 }
 
 input[type="email"],
 input[type="password"] {
-    padding: 15px; /* Maior tamanho de preenchimento */
+    padding: 15px;
     border: none;
-    border-bottom: 3px solid #555; /* Preto ainda mais suave */
+    border-bottom: 3px solid #555; 
     outline: none;
-    font-size: 20px; /* Maior tamanho de fonte */
+    font-size: 20px; 
 }
 
 button {
-    background-color: #555; /* Preto ainda mais suave */
-    color: #f8e866; /* Texto amarelo */
+    background-color: #555; 
+    color: #f8e866; 
     padding: 15px;
     border: none;
-    border-radius: 10px; /* Borda mais arredondada */
+    border-radius: 10px; 
     cursor: pointer;
-    font-size: 20px; /* Maior tamanho de fonte */
+    font-size: 20px; 
 }
 
 button:hover {
-    background-color: #333; /* Preto suave ao passar o mouse */
+    background-color: #333;
 }
 
 .register-link {
-    margin-top: 20px; /* Maior espaço superior */
-    font-size: 18px; /* Maior tamanho de fonte */
-    color: #333; /* Cor amarela */
+    margin-top: 20px; 
+    font-size: 18px; 
+    color: #333; 
 }
 
 a {
-    color: #dbc519; /* Preto ainda mais suave */
+    color: #dbc519;
     text-decoration: none;
 }
 
@@ -74,8 +74,8 @@ a:hover {
 
 .footer {
     text-align: center;
-    background-color: #f0f0f0; /* Cor de fundo */
-    padding: 10px; /* Espaçamento interno */
+    background-color: #f0f0f0;
+    padding: 10px; 
     position: absolute;
     bottom: 0;
     width: 100%;

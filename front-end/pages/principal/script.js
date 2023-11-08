@@ -39,6 +39,7 @@ function addTransaction(transactionName, transactionAmount, transactionType) {
 
     calculateAvailableBalance();
 }
+
 // Formulário de despesas
 expenseTransactionForm.addEventListener('submit', (e) => {
     e.preventDefault();

@@ -13,6 +13,7 @@
             <h2>Saldo Disponível</h2>
             <p>R$ <span id="available-balance">0.00</span></p>
         </div>
+        <button className ='button-sair'>Sair</button>
     </header>
     <main>
         <div class="expense-list">
@@ -21,7 +22,7 @@
             <form id="expense-transaction-form">
                 <input type="text" id="expense-transaction-input" placeholder="Nome da Despesa" required>
                 <input type="number" id="expense-amount-input" placeholder="Valor (R$)" step="0.01" required>
-                <button type="submit">Adicionar</button>
+                <button type="submit" className="button-principal">Adicionar</button>
             </form>
             <ul id="expense-transaction-list"></ul>
         </div>
@@ -31,7 +32,7 @@
             <form id="income-transaction-form">
                 <input type="text" id="income-transaction-input" placeholder="Nome do Ganho" required>
                 <input type="number" id="income-amount-input" placeholder="Valor (R$)" step="0.01" required>
-                <button type="submit">Adicionar</button>
+                <button type="submit" className="button-principal">Adicionar</button>
             </form>
             <ul id="income-transaction-list"></ul>
         </div>

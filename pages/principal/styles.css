@@ -1,4 +1,6 @@
 body {
+    display: flex;
+    flex-direction:column;
     font-family: 'Pacifico', cursive;
     margin: 0;
     padding: 0;
@@ -121,4 +123,12 @@ li button:hover {
 }
 .balance{
     color: green
+}
+@media (max-width: 700px) {
+    main{
+        flex-direction: column;
+    }
+        
+    
+    
 }

@@ -1,10 +1,10 @@
 <?php
     
 
-    $dbHost = 'localhost';
-    $dbUsername ='root';
-    $dbPassword ='';
-    $dataName ='projeto_pitr';
+    $dbHost = 'aws.connect.psdb.cloud';
+    $dbUsername ='8bzy681rxext2ihwrmab';
+    $dbPassword ='pscale_pw_7YQmXDblnRNYoHScowcLshPLIvRa4udN8Wo21GWXsiJ';
+    $dataName ='projeto_pitr';  
 
 
     $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dataName);
